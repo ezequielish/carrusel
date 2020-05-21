@@ -14,27 +14,27 @@
 .carrusel .items::-webkit-scrollbar{
      display: none;
 }
-.carrusel .item{
+.carrusel .items__item{
     width: 100%;
     margin: 0;
     height: 100%;        
 }
-.carrusel .img-wrapper{
+.carrusel .items .items__item-figure{
     margin: 0;
     height: 100%;
     width: 100%;
 }
-.carrusel .img-wrapper img{
+.carrusel .items .items__item-figure img{
     object-fit: cover;
 }
-.carrusel .arrow{
+.carrusel .arrows{
     position: absolute;
     width: 100%;
     align-self: center;
     display: flex;
     justify-content: space-between;
 }
-.carrusel .arrow button{
+.carrusel .arrows button{
     border: none;
     background: rgba(0,0,0,.3);
     display: flex;
@@ -46,21 +46,21 @@
     cursor: pointer;
     outline: none;
 }
-.carrusel .arrow button:last-child{
+.carrusel .arrows button:last-child{
     margin-right: 10px;
 }
-.carrusel .arrow button:first-child{
+.carrusel .arrows button:first-child{
     margin-left: 10px;
 }
 
-.carrusel .item-circle{
+.carrusel .circles{
     position: absolute;
     bottom: 15px;
     display: flex;
     width: 100%;
     justify-content: center;
 }
-.carrusel .item-circle div{
+.carrusel .circles div{
     border: solid #191919 1px;
     height: 15px;
     width: 15px;

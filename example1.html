@@ -17,32 +17,32 @@
     <div id="container">
         <div class="carrusel">
             <div class="items">
-                <div class="item">
-                    <figure class="img-wrapper">
+                <div class="items__item">
+                    <figure class="items__item-figure">
                         <img width="100%" height="100%" src="./assets/img/img-1.jpg" alt="">
                     </figure>
                 </div>
-                <div class="item">
-                    <figure class="img-wrapper">
+                <div class="items__item">
+                    <figure class="items__item-figure">
                         <img width="100%" height="100%" src="./assets/img/img-2.jpg" alt="">
                     </figure>
                 </div>
-                <div class="item">
-                    <figure class="img-wrapper">
+                <div class="items__item">
+                    <figure class="items__item-figure">
                         <img width="100%" height="100%" src="./assets/img/img-3.jpg" alt="">
                     </figure>
                 </div>
-                <div class="item">
-                    <figure class="img-wrapper">
+                <div class="items__item">
+                    <figure class="items__item-figure">
                         <img width="100%" height="100%" src="./assets/img/img-4.jpg" alt="">
                     </figure>
                 </div>
             </div>
-            <div class="arrow">
-                <button id="btn-left"><img width="24px" height="24px" src="./assets/img/icons/chevron_left-24px.svg" alt=""></button>
-                <button id="btn-right"><img width="24px" height="24px" src="./assets/img/icons/chevron_right-24px.svg" alt=""></button>
+            <div class="arrows">
+                <button id="arrows__btn-left"><img width="24px" height="24px" src="./assets/img/icons/chevron_left-24px.svg" alt=""></button>
+                <button id="arrows__btn-right"><img width="24px" height="24px" src="./assets/img/icons/chevron_right-24px.svg" alt=""></button>
             </div>
-            <div class="item-circle">
+            <div class="circles">
             </div>
         </div>
     </div>
@@ -56,6 +56,7 @@
 
         //new Carrusel(element contenedor, temporizador)//si el temporizador es igual a false sera estático
         const carrusel = new Carrusel(carruselElement, 4000);        
+
     })
  
 </script>

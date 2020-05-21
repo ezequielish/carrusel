@@ -2,9 +2,9 @@ class Carrusel{
     constructor(el, timer){
         this.el = el
         this.itemsContainer = this.el.querySelector('.items') //contenedor de los items del carrusel
-        this.btnLeft = this.el.querySelector('#btn-left') //boton de flecha
-        this.btnRight = this.el.querySelector('#btn-right') //boton de flecha
-        this.itemCircleContainer = this.el.querySelector('.item-circle') //contendor de circulos que representa un item
+        this.btnLeft = this.el.querySelector('#arrows__btn-left') //boton de flecha
+        this.btnRight = this.el.querySelector('#arrows__btn-right') //boton de flecha
+        this.itemCircleContainer = this.el.querySelector('.circles') //contendor de circulos que representa un item
         this.itemActive = 1 //items activo
         this.itemsTotal = 0 //total de items que se van a iterar en el carrusel
         this.circleColor = '#191919'//color de fondo de circulos
