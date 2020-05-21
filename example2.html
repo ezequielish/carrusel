@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/carrusel.css">
+    <title>Carrusel</title>
+</head>
+<style>
+    body{
+        margin: 0;
+    }
+
+ 
+</style>
+<body>
+    <div id="container">
+        <div class="carrusel">
+            <div class="items">
+                <div class="item">
+                    <div>
+                        <h1>
+                            CARRUSEL ITEM 1
+                        </h1>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <h1>
+                            CARRUSEL ITEM 2
+                        </h1>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <h1>
+                            CARRUSEL ITEM 3
+                        </h1>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <h1>
+                            CARRUSEL ITEM 4
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow">
+                <button id="btn-left"><img width="24px" height="24px" src="./assets/img/icons/chevron_left-24px.svg" alt=""></button>
+                <button id="btn-right"><img width="24px" height="24px" src="./assets/img/icons/chevron_right-24px.svg" alt=""></button>
+            </div>
+            <div class="item-circle">
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./assets/js/carrusel.js"></script>
+<script>
+    
+    document.addEventListener('DOMContentLoaded', () => {
+        const carruselElement = document.querySelector('.carrusel')
+
+        //new Carrusel(element contenedor, temporizador)//si el temporizador es igual a false sera estático
+        new Carrusel(carruselElement, 3000);        
+    })
+ 
+</script>
+</html>

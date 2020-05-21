@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/carrusel.css">
+    <title>Carrusel</title>
+</head>
+<style>
+    body{
+        margin: 0;
+    }
+
+ 
+</style>
+<body>
+    <div id="container">
+        <div class="carrusel">
+            <div class="items">
+                <div class="item">
+                    <figure class="img-wrapper">
+                        <img width="100%" height="100%" src="./assets/img/img-1.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="item">
+                    <figure class="img-wrapper">
+                        <img width="100%" height="100%" src="./assets/img/img-2.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="item">
+                    <figure class="img-wrapper">
+                        <img width="100%" height="100%" src="./assets/img/img-3.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="item">
+                    <figure class="img-wrapper">
+                        <img width="100%" height="100%" src="./assets/img/img-4.jpg" alt="">
+                    </figure>
+                </div>
+            </div>
+            <div class="arrow">
+                <button id="btn-left"><img width="24px" height="24px" src="./assets/img/icons/chevron_left-24px.svg" alt=""></button>
+                <button id="btn-right"><img width="24px" height="24px" src="./assets/img/icons/chevron_right-24px.svg" alt=""></button>
+            </div>
+            <div class="item-circle">
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./assets/js/carrusel.js"></script>
+<script>
+    
+    document.addEventListener('DOMContentLoaded', () => {
+        const carruselElement = document.querySelector('.carrusel')
+
+        //new Carrusel(element contenedor, temporizador)//si el temporizador es igual a false sera estático
+        const carrusel = new Carrusel(carruselElement, 4000);        
+    })
+ 
+</script>
+</html>

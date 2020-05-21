@@ -1,0 +1,70 @@
+.carrusel{
+    height: 100vh;
+    display: flex;
+    position: relative;
+    background-color: aliceblue;
+}
+.carrusel .items{
+    display: flex;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    flex-flow: column wrap;
+    width: 100%;
+}
+.carrusel .items::-webkit-scrollbar{
+     display: none;
+}
+.carrusel .item{
+    width: 100%;
+    margin: 0;
+    height: 100%;        
+}
+.carrusel .img-wrapper{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+.carrusel .img-wrapper img{
+    object-fit: cover;
+}
+.carrusel .arrow{
+    position: absolute;
+    width: 100%;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+}
+.carrusel .arrow button{
+    border: none;
+    background: rgba(0,0,0,.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    outline: none;
+}
+.carrusel .arrow button:last-child{
+    margin-right: 10px;
+}
+.carrusel .arrow button:first-child{
+    margin-left: 10px;
+}
+
+.carrusel .item-circle{
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.carrusel .item-circle div{
+    border: solid #191919 1px;
+    height: 15px;
+    width: 15px;
+    margin: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
