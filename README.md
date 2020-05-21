@@ -8,7 +8,7 @@ Este es un carrusel simple hecho con javascript y css no se necesita ninguna dep
 
 **html**
 
-````
+```
 <div class="carrusel">
     <div class="items">
         <div class="items__item">
