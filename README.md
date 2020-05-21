@@ -58,7 +58,7 @@ Creamos una nueva instacia ```new Carrusel(param,param)```
  
 </script>
 
-
+```
 
 ## Carrusel de Imágenes
 
